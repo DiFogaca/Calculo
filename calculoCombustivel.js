@@ -31,7 +31,7 @@ function setarValoresPadroes() {
 
 	valorGasolinaBomba = 4.95;
 	valorEtanolBomba = 3.79;
-	valorGNVBomba = 4.60;
+	valorGNVBomba = 4.59;
 
 	autonomiaGasolina = 520;
 	autonomiaEtanol = 395;
