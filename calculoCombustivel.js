@@ -29,13 +29,13 @@ function setarValoresPadroes() {
 	capacidadeTanqueE = 57;
 	capacidadeTanqueGNV = 16;
 
-	valorGasolinaBomba = 4.59;
-	valorEtanolBomba = 3.49;
-	valorGNVBomba = 4.89;
+	valorGasolinaBomba = 4.95;
+	valorEtanolBomba = 3.79;
+	valorGNVBomba = 4.60;
 
 	autonomiaGasolina = 520;
 	autonomiaEtanol = 395;
-	autonomiaGNV = 140;
+	autonomiaGNV = 170;
 
 	calcularConsumo();
 	calcularCusto();
