@@ -3,5 +3,6 @@
 > Desenvolvendo o Site de Calculo de Gastos com Combustível
 
 ```
+node app.js
 Projeto em JavaScript, HTML, CSS
 ```
