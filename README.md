@@ -1,4 +1,5 @@
 Calculo de Combustivel
 
 '''
-node calculodeCombustível.js
+node calculoCombustível.js
+'''
