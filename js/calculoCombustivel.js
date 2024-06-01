@@ -29,8 +29,8 @@ function setarValoresPadroes() {
 	capacidadeTanqueE = 57;
 	capacidadeTanqueGNV = 16;
 
-	valorGasolinaBomba = 4.95;
-	valorEtanolBomba = 3.79;
+	valorGasolinaBomba = 5.29;
+	valorEtanolBomba = 3.59;
 	valorGNVBomba = 4.59;
 
 	autonomiaGasolina = 520;
