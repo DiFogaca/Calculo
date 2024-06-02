@@ -10,9 +10,6 @@
 
 <body>
 	<h1 position="center">Calcule Gastos com Combustivel</h1>
-
-	<!-- <img src="imagens/fundo.jpg"> -->
-
 	<div id="calcularModal">
 		<section class="modal-content">
 			<h3>Por Favor, Informe os Dados:</h3>
@@ -44,48 +41,45 @@
 		</section>
 	</div>
 
-	<span id="botaoCalcular" class="button" onclick="clickAquiButtonClick()">Clique Aqui para Calcular</span>
-
-	<div class="table1">
-
+	<section class="table1">
 		<table>
-
-			<thead>
-				<caption colspan="2">VALORES NA BOMBA</caption>
-			</thead>
-
+			<caption colspan="2">VALORES NA BOMBA</caption>
 			<thead>
 				<tr>
-					<th>Gasolina R$</th>
-					<td>
-						<script>
-							document.write(valorGasolinaBomba); 
-						</script>
-					</td>
+					<th>Produto</th>
+					<th>Preço (R$)</th>
 				</tr>
-
-				<tr>
-					<th>Etanol R$</th>
-					<td>
-						<script>
-							document.write(valorEtanolBomba); 
-						</script>
-					</td>
-				</tr>
-
-				<tr>
-					<th>GNV R$</th>
-					<td>
-						<script>
-							document.write(valorGNVBomba); 
-						</script>
-					</td>
-				</tr>
-
 			</thead>
-
+			<tbody>
+				<thead>
+					<tr>
+						<th>Gasolina:</th>
+						<td>
+							<script>
+								document.write(valorGasolinaBomba); 
+							</script>
+						</td>
+					</tr>
+					<tr>
+						<th>Etanol:</th>
+						<td>
+							<script>
+								document.write(valorEtanolBomba); 
+							</script>
+						</td>
+					</tr>
+					<tr>
+						<th>GNV:</th>
+						<td>
+							<script>
+								document.write(valorGNVBomba); 
+							</script>
+						</td>
+					</tr>
+				</thead>
+			</tbody>
 		</table>
-	</div>
+	</section>
 
 	<div class="table2">
 		<table>
