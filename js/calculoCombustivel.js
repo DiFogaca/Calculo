@@ -59,11 +59,14 @@ function calcularCusto() {
 }
 
 function clickAquiButtonClick() {
+	let modalAbre = document.getElementById('botaoCalcular'); 
+	modalAbre.style.display = 'none';
 	let modal = document.getElementById("calcularModal");
 	modal.style.display = "block";
 }
 
 function calcularModalFechar() {
+	document.getElementById('botaoCalcular').style.display = 'inline-flex';
 	let modal = document.getElementById("calcularModal");
 	modal.style.display = "none";
 }

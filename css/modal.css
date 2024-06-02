@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:400,300,500&display=swap');
 
-*{
-    margin: 0;
-    padding: 0;
-    border: 0;
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
 }
 
 /* Modal */
@@ -26,84 +26,105 @@
 	/* Cor de fundo escura */
 	background-color: rgba(0, 0, 0, 0.4);
 	/* Transparência da cor de fundo */
-	
+
+}
+
+fieldset {
+	width: 600px;
+	height: 600px;
+	padding: 10px;
+	margin: 10px;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
 }
 
 /* Conteúdo do modal */
 .modal-content {
-	font-family: 'Roboto', 'Palatino Linotype', 'Book Antiqua', Palatino, 'Times New Roman', Times, Arial, Helvetica, sans-serif;
-	color: azure;
-	background-color: #00c3ffa1;
-	margin: 15% auto;
-	/* Margem do centro */
-	padding: 20px;
-	border: 1px solid #888;
-	border-radius: 10px;
-	/*Arredondamento dos Cantos*/
-	width: 30%;
-	/* Largura específica */
+	form {
+		background-color: #00c3ffa1;
+		font-family: 'Roboto', 'Palatino Linotype', 'Book Antiqua', Palatino, 'Times New Roman', Times, Arial, Helvetica, sans-serif;
+		font-weight: 500;
+		font-size: large;
+		color: rgb(0, 0, 0);
+		padding: 10px;
+		border: 1px solid #ddd;
+		width: 500px;
+		height: auto;
+	}
+
+	label {
+		display: block;
+		margin: 10px;
+		padding: 10px 5px;
+		position: relative;
+		text-align: end;
+		grid-column-start: 1;
+		grid-column-end: 2;
+	}
+
+	input {
+		grid-column-start: 2;
+		grid-column-end: 3;
+
+		&[type="text"],
+		&[type="number"] {
+			border: 1px solid #ddd;
+			max-width: 100px;
+			border-radius: 5px;
+			font-family: sans-serif;
+			font-size: 15px;
+			padding: 10px 10px;
+			margin: 10px;
+			background-color: #f5f5f5;
+			border: 1px solid #ccc;
+		}
+		&[type="text"],
+		&[type="number"]:hover{
+			box-shadow: 0 0 10px 0px black;
+		}
+
+		&[type="submit"] {
+			width: auto;
+			padding: 10px 20px;
+			margin-top: 10px;
+			background-color: #4e9f6a;
+			color: white;
+			border: none;
+			cursor: pointer;
+		}
+
+		&[type="submit"]:hover {
+			background-color: #3e8e5a;
+		}
+
+		&[type="reset"] {
+			width: auto;
+			padding: 10px 20px;
+			margin-top: 10px;
+			background-color: #9f4e4e;
+			color: white;
+			border: none;
+			cursor: pointer;
+
+			&[type="reset"]:hover {
+				background-color: #8e3e3e;
+			}
+		}
+	}
 }
 
 /* Botão "fechar" */
 .close {
-	color: rgb(0, 0, 0);
-	float: right;
-	font-size: 28px;
-	font-weight: bold;
+	width: auto;
+	padding: 10px 20px;
+	margin-top: 10px;
+	background-color: #4e9f98;
+	color: white;
+	border: none;
+	cursor: pointer;
 }
 
 .close:hover,
 .close:focus {
-	color: black;
-	text-decoration: none;
-	cursor: pointer;
-}
-/* ---------- Botão "Enviar" -------------*/
-.modalBtnEnviar {
-	
-	padding: 5px 8px;
-	border-radius: 10px;
-	word-spacing: 10px;
-	font-weight: 700;
-	font-family: sans-serif;
-	font-size: 12px;
-	text-transform: uppercase;
-	letter-spacing: 1px;
-	color: white;
-	background-color: rgba(233, 62, 62, 0.966);
-	transition: .3s;
-	cursor: pointer;
-
-	
-}
-
-.modalBtnEnviar.in {
-	opacity: 0;
-	-webkit-transition: opacity .15s linear;
-	transition: opacity .15s linear;
-}
-
-
-.modalBtnEnviar:hover {
-	box-shadow: 0 0 10px 0px black;
-	opacity: 1;
-}
-
-/* --------- INPUTS - CAIXAS DE TEXTO NO MODAL --------*/
-.camposPreenchiveis {
-	display: inline-flex;
-	position: relative;
-	max-width: 200px;
-	border-radius: 5px;
-	font-family: sans-serif;
-	font-size: 12px;
-	padding: 10px 12px;
-	margin: 5px;
-	background-color: #f5f5f5; /* Cor de fundo */
-    border: 1px solid #ccc; /* Borda */
-
-}
-
-.camposPreenchiveis:hover {
-box-shadow: 0 0 10px 0px black;
+	background-color: #3a7772;
 }
