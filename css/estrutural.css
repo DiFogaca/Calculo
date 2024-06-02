@@ -21,76 +21,22 @@ body {
 	align-items: center;
 }
 
+main {
+	margin-top: 10px;
+}
+
+@media screen and (max-width: 768px) {
+	
+}
+
 caption {
 	padding: 10px;
 	caption-side: left;
 }
 
-table {
-	border-collapse: collapse;
-	border: 3px solid rgb(44, 9, 244);
-	letter-spacing: 1px;
-	font-family: sans-serif;
-	font-size: 0.9rem;
-	position: relative;
-	text-shadow: 0.5px 0.5px 0 rgba(6, 1, 54, 0.553);
-	overflow: hidden;
-}
 
-.table1 {
 
-	position: absolute;
-	left: 10px;
-	top: 0;
 
-}
-
-.table2 {
-
-	position: absolute;
-	overflow: auto;
-	bottom: 10px;
-	right: 10px;
-	left: 10px;
-
-}
-
-td,
-th {
-	border: 1px solid rgb(254, 4, 4);
-	padding: 7px 5px;
-}
-
-th {
-	background-color: rgba(0, 34, 255, 0.578);
-}
-
-td {
-	text-align: center;
-	padding: 10px;
-}
-
-tr:nth-child(even) td {
-	background-color: rgba(32, 176, 209, 0.571);
-}
-
-tr:nth-child(odd) td {
-	background-color: rgba(192, 192, 192, 0.777);
-}
-
-.titulo {
-	font: 1.1rem sans-serif;
-	font-style: italic;
-	color: rgb(205, 228, 248);
-	text-shadow: 1px 1px 0 rgba(8, 8, 8, 0.553);
-	white-space: nowrap;
-
-}
-
-.titleButton {
-	width: 100%;
-	text-align: center;
-}
 
 .button {
 	display: inline-flex;
