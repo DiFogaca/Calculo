@@ -78,6 +78,30 @@ function enviarFormulario() {
 	calcularModalFechar();
 }
 
+function limparFormulario(){
+	const campoGasolina = document.getElementById('capacidadeTanqueG');
+	const campoAutGasolina = document.getElementById('autonomiaGasolina');
+	const campoValorGasolina = document.getElementById('valorGasolinaBomba');
+    const campoEtanol = document.getElementById('capacidadeTanqueE');
+	const campoAutEtanol = document.getElementById('autonomiaEtanol');
+	const campoValorEtanol = document.getElementById('valorEtanolBomba');
+    const campoGNV = document.getElementById('capacidadeTanqueGNV');
+	const campoAutGNV = document.getElementById('autonomiaGNV');
+	const campoValorGNV = document.getElementById('valorGNVBomba');
+
+	campoGasolina.value = '';
+	campoAutGasolina.value = '';
+	campoValorGasolina.value = '';
+    campoEtanol.value = '';
+	campoAutEtanol.value = '';
+	campoValorEtanol.value = '';
+    campoGNV.value = '';
+	campoAutGNV.value = '';
+	campoValorGNV.value = '';
+
+	return false;
+}
+
 function coletarDadosTela() {
 	capacidadeTanqueG = document.getElementById('capacidadeTanqueG').value;
 	capacidadeTanqueE = document.getElementById('capacidadeTanqueE').value;
