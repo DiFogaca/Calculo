@@ -2,23 +2,33 @@
 
 @import url('https://fonts.googleapis.com/css?family=Roboto:400,300,500&display=swap');
 
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+
 body {
 	font-family: 'Roboto', 'Palatino Linotype', 'Book Antiqua', Palatino, 'Times New Roman', Times, Arial, Helvetica, sans-serif;
 	background-image: 
-			linear-gradient(to bottom,
-			rgba(5, 14, 7, 0.24),
-			rgba(217, 255, 0, 0.247)), url("../imagens/fundo.jpg");
+			linear-gradient(to top,
+			rgba(170, 170, 170, 0.349),
+			rgba(0, 0, 0, 0.247)), url("../imagens/fundo.jpg");
 	width: auto;
 	height: auto;
 	background-repeat: no-repeat;
 	background-size: cover;
 	box-sizing: border-box;
-	margin: 0;
-	padding: 0;
 
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+}
+
+.container-fluid{
+	display:block;
+	align-content: space-between;
 }
 
 main {
@@ -33,9 +43,6 @@ caption {
 	padding: 10px;
 	caption-side: left;
 }
-
-
-
 
 
 .button {
@@ -59,8 +66,10 @@ caption {
 	box-shadow: 0 0 10px 0px black;
 }
 
-.title {
+#title {
 	color: #1A1110;
-	margin-bottom: 5%;
+	margin-top: 2%;
+	align-content: normal;
+	justify-content: center;
 
 }
