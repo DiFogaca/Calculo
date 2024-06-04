@@ -13,8 +13,8 @@ body {
 	font-family: 'Roboto', 'Palatino Linotype', 'Book Antiqua', Palatino, 'Times New Roman', Times, Arial, Helvetica, sans-serif;
 	background-image: 
 			linear-gradient(to bottom,
-			rgba(5, 14, 7, 0.24),
-			rgba(217, 255, 0, 0.247)), url("../imagens/fundo.jpg");
+			rgba(177, 177, 177, 0.459),
+			rgba(0, 0, 0, 0.247)), url("../imagens/fundo.jpg");
 	width: auto;
 	height: auto;
 	background-repeat: no-repeat;
@@ -26,7 +26,7 @@ body {
 	align-items: center;
 }
 
-.container-fluid{
+#container-fluid{
 	display:block;
 	align-content: space-between;
 }
